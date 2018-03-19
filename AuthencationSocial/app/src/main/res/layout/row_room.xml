@@ -14,27 +14,32 @@
         android:weightSum="10"
         android:padding="2dp"
         android:layout_margin="1dp"
+        android:background="@drawable/custom_listroom"
         >
+
         <TextView
-            android:text="Ten phong"
-            android:textSize="15sp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="5"
             android:id="@+id/txtv_name"
-            android:autoSizeTextType="uniform"
-            android:padding="2dp"
-            />
-        <TextView
-            android:text="so nguoi: "
-            android:textSize="15dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
-            android:id="@+id/txtv_cnt"
             android:autoSizeTextType="uniform"
+            android:gravity="center_vertical|center"
             android:padding="2dp"
-            />
+            android:text="Ten phong"
+            android:textColor="#f9f3f3"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtv_cnt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="so nguoi: "
+            android:textColor="#efe6e6"
+            android:textSize="15dp" />
     </LinearLayout>
 
     <ImageButton
