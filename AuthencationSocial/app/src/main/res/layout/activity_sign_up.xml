@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/custom_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Đăng ký"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#eeeaef"
+        android:background="@drawable/custom_trangtri"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSignup"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtvSignup"
+        android:layout_marginTop="40dp"
+
+        android:weightSum="15"
+        android:orientation="vertical"
+        android:id="@+id/menu_signup_linearEdit"
+
+        >
+
+        <EditText
+            android:id="@+id/menu_signup_editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="5"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center_vertical|center_horizontal"
+
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#181616" />
+
+        <EditText
+            android:id="@+id/menu_signup_editPass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#181616" />
+
+        <EditText
+            android:id="@+id/menu_signup_editRePass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center_vertical|center"
+            android:hint="RePass"
+            android:inputType="textPassword"
+            android:textColor="#181616" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/menu_signup_linearEdit"
+        android:layout_marginTop="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/menu_signup_btnOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/custom_button"
+            android:text="Ok" />
+        <Button
+            android:background="@drawable/custom_button"
+            android:text="Cancel"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:id="@+id/menu_signup_btnCancel"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
